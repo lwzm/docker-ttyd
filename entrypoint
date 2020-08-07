@@ -4,5 +4,5 @@
 if [ -t 1 ]; then
     exec "$@"
 else
-    exec ttyd -p 80 "$@"
+    exec ttyd $TTYD_OPTS -p 80 "$@"
 fi
