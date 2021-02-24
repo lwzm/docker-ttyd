@@ -1,4 +1,4 @@
-FROM tsl0922/ttyd:alpine as ttyd
+FROM tsl0922/ttyd:1.6.3-alpine as ttyd
 
 FROM alpine
 
