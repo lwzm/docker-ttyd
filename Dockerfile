@@ -1,5 +1,3 @@
-FROM tsl0922/ttyd:1.6.3-alpine as ttyd
-
 FROM alpine
 
 LABEL maintainer="lwzm@qq.com"
@@ -10,5 +8,5 @@ EXPOSE 80
 ENTRYPOINT [ "entrypoint" ]
 CMD [ "sh" ]
 
-COPY --from=ttyd /usr/bin/ttyd /bin/
+COPY --from=tsl0922/ttyd:1.6.3-alpine /usr/bin/ttyd /bin/
 COPY entrypoint /bin/
